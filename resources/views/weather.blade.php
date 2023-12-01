@@ -27,15 +27,21 @@
             text-align: right;
             padding: 4px 7px;
             border: 1px solid #ddd;
+            border-right: 0;
+            padding-right: 4px;
         }
 
         table tr th + td {
             padding-right: 10px;
+            border: 0;
+            border-bottom: 1px solid #ddd;
         }
 
         table tr td {
             padding: 7px 10px;
+            padding-left: 0;
             border: 1px solid #ddd;
+            border-left: 0;
         }
 
         table caption {
@@ -46,6 +52,9 @@
             border: 1px solid #ededed;
         }
 
+        table tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
     </style>
 @endpush
 

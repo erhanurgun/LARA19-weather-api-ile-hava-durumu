@@ -9,11 +9,12 @@
     <meta name="description"
           content="{{ $desc ?? __('Laravel 10.x ve Weather API ile geliştirilen bir hava durumu projesi...') }}">
     <title>{{ $title ?? config('app.name') }} | {{ __('Hava Durumu') }}</title>
+    <link rel="shortcut icon" href="{{ asset(config('app.assets')) }}/img/favicon.ico" type="image/x-icon">
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet"/>
     <!-- Styles -->
-    {{--<link rel="stylesheet" href="{{ asset('') }}/assets/css/app.css">--}}
+    {{--<link rel="stylesheet" href="{{ asset(config('app.assets')) }}/assets/css/app.css">--}}
     @stack('styles')
 </head>
 <body class="antialiased">

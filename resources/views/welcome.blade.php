@@ -851,12 +851,14 @@
                                 </svg>
                             </div>
 
-                            <h2 class="mt-6 text-xl font-semibold text-gray-900 dark:text-white">{{ __('Weather Example') }}</h2>
+                            <h2 class="mt-6 text-xl font-semibold text-gray-900 dark:text-white">{{ __('Proje Örnekleri') }}</h2>
 
                             <p class="mt-4 text-gray-500 dark:text-gray-400 text-sm leading-relaxed">
-                                {{ __('Hava durumu API\'sini kullanarak, hava durumu tahminlerini gösteren bir örnek.') }}
+                                {{ __('Weather API\'sini kullanarak, hava durumu tahminlerini gösteren bir örnek.') }}
                                 <br>
-                                {{ __('Örnek: ') }} <span class="font-semibold !text-red-500">http://laravel.test/weather?lang=tr&cityOrCountry=Ağrı</span>
+                                {{ __('Ör: ') }} <span class="font-semibold">http://laravel.test/weather?lang=en&cityOrCountry=Turkey</span>
+                                <br>
+                                {{ __('Ör: ') }} <span class="font-semibold">http://laravel.test/api/v1/weather?lang=tr&cityOrCountry=Ağrı</span>
                             </p>
                         </div>
 

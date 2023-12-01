@@ -5,6 +5,7 @@ use Illuminate\Support\ServiceProvider;
 
 return [
 
+    'assets' => env('APP_ASSETS', 'assets'),
     /*
     |--------------------------------------------------------------------------
     | Application Name
@@ -182,7 +183,9 @@ return [
     */
 
     'aliases' => Facade::defaultAliases()->merge([
-        // 'Example' => App\Facades\Example::class,
+        // Helpers
+        'BaseHelper' => App\Helpers\BaseHelper::class,
+        'ConvertHelper' => App\Helpers\ConvertHelper::class,
     ])->toArray(),
 
 ];

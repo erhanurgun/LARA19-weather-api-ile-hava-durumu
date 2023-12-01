@@ -86,6 +86,7 @@ http://laravel.test/weather?lang=tr&cityOrCountry=Ağrı
 ## Ekran Görüntüleri
 ![Ülke İçin Hava Durumu](./public/assets/img/ss/country.png)
 ![Şehir İçin Hava Durumu](./public/assets/img/ss/city.png)
+![JSON Çıktısı](./public/assets/img/ss/json.png)
 
 ## Kullanılan Paket
 

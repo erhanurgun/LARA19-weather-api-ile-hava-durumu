@@ -1,12 +1,12 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Api\V1;
 
-use App\Helpers\ConvertHelper;
+use App\Http\Controllers\Controller;
 use App\Http\Requests\WeatherRequest;
 use App\Repositories\WeatherRepository;
+use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
-use Illuminate\View\View;
 
 class WeatherController extends Controller
 {
@@ -27,12 +27,8 @@ class WeatherController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index(WeatherRequest $request): View
+    public function index(WeatherRequest $request): JsonResponse
     {
-        $response = ConvertHelper::jsonToView($this->aboutRepository->index($request));
-
-        return view('weather', [
-            'data' => $response,
-        ]);
+        return $this->aboutRepository->index($request);
     }
 }

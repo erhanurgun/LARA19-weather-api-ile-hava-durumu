@@ -18,4 +18,9 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('weather', [WeatherController::class, 'index'])->name('weather');
+// DDOS Protection
+Route::middleware('throttle:60,1')->group(function () {
+    // Weather
+    Route::get('weather', [WeatherController::class, 'index'])->name('weather');
+});
+
