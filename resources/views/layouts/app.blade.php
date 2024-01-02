@@ -5,10 +5,10 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="author" content="{{ __('@erhanurgun, Erhan ÜRGÜN') }}">
+    <meta name="author" content="{{ __('app.author') }}">
     <meta name="description"
-          content="{{ $desc ?? __('Laravel 10.x ve Weather API ile geliştirilen bir hava durumu projesi...') }}">
-    <title>{{ $title ?? config('app.name') }} | {{ __('Hava Durumu') }}</title>
+          content="{{ $desc ?? __('app.description') }}">
+    <title>{{ $title ?? config('app.name') }} | {{ __('app.title') }}</title>
     <link rel="shortcut icon" href="{{ asset(config('app.assets')) }}/img/favicon.ico" type="image/x-icon">
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.bunny.net">
